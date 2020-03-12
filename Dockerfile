@@ -4,7 +4,7 @@ FROM java:8
 #VOLUME /tmp
 # 拷贝文件到容器，handcuffs-reg-0.0.1-SNAPSHOT.jar这里是maven打包后的名字
 ADD registerCenter-0.0.1-SNAPSHOT.jar center.jar
-RUN bash -c 'touch /center.jar'
+#RUN bash -c 'touch /center.jar'
 
 EXPOSE 8716
 # 配置容器启动后执行的命令
