@@ -14,4 +14,5 @@ ADD registerCenter-0.0.1-SNAPSHOT.jar /wuwei/registercenter/center.jar
 
 EXPOSE 8716
 # 配置容器启动后执行的命令
-ENTRYPOINT  ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/wuwei/registercenter/center.jar"]
+#ENTRYPOINT  ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/wuwei/registercenter/center.jar"]
+ENTRYPOINT  ["java","-jar","/wuwei/registercenter/center.jar"]
