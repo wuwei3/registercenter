@@ -6,7 +6,7 @@ WORKDIR /wuwei/registercenter
 
 #RUN chgrp -R 0 /wuwei/registercenter
 #RUN chmod -R g+rwX /wuwei/registercenter
-RUN chmod -R 777 /wuwei/registercenter 
+#RUN chmod -R 777 /wuwei/registercenter 
 # 拷贝文件到容器，handcuffs-reg-0.0.1-SNAPSHOT.jar这里是maven打包后的名字
 ADD registerCenter-0.0.1-SNAPSHOT.jar /wuwei/registercenter/center.jar
 #RUN bash -c 'touch /wuwei/registercenter/center.jar'
