@@ -2,7 +2,7 @@
 #FROM java:8
 FROM openjdk:8-jdk-alpine
 # 将本地文件夹挂载到当前容器
-#VOLUME /tmp
+VOLUME /tmp
 WORKDIR /wuwei/registercenter
 
 #RUN chgrp -R 0 /wuwei/registercenter
