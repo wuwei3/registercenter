@@ -1,6 +1,6 @@
 # 基于哪个镜像
 #FROM java:8
-FROM wwqq1013/myjava8:0.1
+FROM java8ocr/java8-ocr:latest
 # 将本地文件夹挂载到当前容器
 VOLUME /tmp
 WORKDIR /wuwei/registercenter
